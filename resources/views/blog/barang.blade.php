@@ -1,8 +1,8 @@
 @extends('layout.master')
 
 @section('content')
-    <h5>Halaman Daftar Barang</h5>
-        <table class="table table-head-fixed">
+    <div class="table-responsive">
+        <table class="table table-head-fixed table-hover">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -24,7 +24,8 @@
                 @endforeach
             </tbody>           
         </table>
-        <div class="d-flex">
-            {{ $blog->links() }}
-        </div>
+    </div>
+    <div class="d-flex">
+        {{ $blog->links() }}
+    </div>
 @endsection

@@ -1,5 +1,31 @@
 @extends('layout.master')
 
 @section('content')
-    <h1>Ini halaman pelanggan</h1>
+    <div class="table-responsive">
+        <table class="table table-head-fixed table-hover">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nama</th>
+                    <th>Alamat</th>
+                    <th>Jenis Kelamin</th>
+                    <th>Nomor Telepon</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach($blog as $b)
+                    <tr>
+                        <td>{{ $b->id }}</td>
+                        <td>{{ $b->nama }}</td>
+                        <td>{{ $b->alamat }}</td>
+                        <td>{{ $b->jenis_kelamin }}</td>
+                        <td>{{ $b->nomor_telepon }}</td>
+                    </tr>
+                @endforeach
+            </tbody>           
+        </table>
+    </div>
+    <div class="d-flex">
+        {{ $blog->links() }}
+    </div>
 @endsection

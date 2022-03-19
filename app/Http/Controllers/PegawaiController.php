@@ -7,10 +7,10 @@ use Illuminate\Http\Request;
 
 class PegawaiController extends Controller
 {
-    public function pegawai()
+    public function index()
     {
-        $all_pegawai = pegawai :: paginate(4);
+        $all_pegawai = Pegawai::paginate(4);
         return view('blog.pegawai', ['blog' => $all_pegawai])
-                     ->with('title', 'Daftar pegawai');
+                     ->with('title', 'Daftar Pegawai');
     }
 }

@@ -3,6 +3,7 @@
 use App\Http\Controllers\BarangController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\PelangganController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,8 +26,8 @@ Route::get('/', [MainController:: class, 'home']);
 
 Route::get('/barang', [BarangController:: class, 'index']);
 
-Route::get('/pelanggan', [MainController:: class, 'pelanggan']);
+Route::get('/pelanggan', [PelangganController:: class, 'index']);
 
-Route::get('/pegawai', [PegawaiController:: class, 'pegawai']);
+Route::get('/pegawai', [PegawaiController:: class, 'index']);
 
 Route::get('/supplier', [MainController:: class, 'supplier']);
