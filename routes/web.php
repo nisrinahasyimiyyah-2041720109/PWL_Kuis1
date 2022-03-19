@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\PegawaiController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,6 +26,6 @@ Route::get('/barang', [MainController:: class, 'barang']);
 
 Route::get('/pelanggan', [MainController:: class, 'pelanggan']);
 
-Route::get('/pegawai', [MainController:: class, 'pegawai']);
+Route::get('/pegawai', [PegawaiController:: class, 'pegawai']);
 
 Route::get('/supplier', [MainController:: class, 'supplier']);
