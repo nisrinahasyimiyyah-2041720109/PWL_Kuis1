@@ -3,6 +3,7 @@
 use App\Http\Controllers\BarangController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\SupplierController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,4 +30,4 @@ Route::get('/pelanggan', [MainController:: class, 'pelanggan']);
 
 Route::get('/pegawai', [PegawaiController:: class, 'pegawai']);
 
-Route::get('/supplier', [MainController:: class, 'supplier']);
+Route::get('/supplier', [SupplierController:: class, 'supplier']);
