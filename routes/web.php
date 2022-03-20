@@ -3,7 +3,6 @@
 use App\Http\Controllers\BarangController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\PegawaiController;
-use App\Http\Controllers\PelangganController;
 use App\Http\Controllers\SupplierController;
 use App\Http\Controllers\PelangganController;
 use Illuminate\Support\Facades\Route;
