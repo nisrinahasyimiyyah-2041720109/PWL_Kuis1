@@ -26,8 +26,8 @@ Route::get('/', [MainController:: class, 'home']);
 
 Route::get('/barang', [BarangController:: class, 'index']);
 
-Route::get('/pelanggan', [MainController:: class, 'pelanggan']);
+Route::get('/pelanggan', [PelangganController:: class, 'index']);
 
-Route::get('/pegawai', [PegawaiController:: class, 'pegawai']);
+Route::get('/pegawai', [PegawaiController:: class, 'index']);
 
 Route::get('/supplier', [SupplierController:: class, 'supplier']);

@@ -18,7 +18,7 @@ class PegawaiSeeder extends Seeder
             [
                 'nama' => 'Akhmad Rivaldi',
                 'alamat' => 'Malang',
-                'jenis_kelamin' => 'Laki Laki',
+                'jenis_kelamin' => 'Laki-Laki',
                 'nomor_telepon' => '082987152666',
                 'jabatan' => 'Manager'
             ],
@@ -32,7 +32,7 @@ class PegawaiSeeder extends Seeder
             [
                 'nama' => 'Muhammad Hafidz ',
                 'alamat' => 'Jakarta',
-                'jenis_kelamin' => 'Laki Laki',
+                'jenis_kelamin' => 'Laki-Laki',
                 'nomor_telepon' => '082677451002',
                 'jabatan' => 'Admin'
             ],
@@ -46,21 +46,21 @@ class PegawaiSeeder extends Seeder
             [
                 'nama' => 'Naufal Alfarih',
                 'alamat' => 'Surabaya',
-                'jenis_kelamin' => 'Laki Laki',
+                'jenis_kelamin' => 'Laki-Laki',
                 'nomor_telepon' => '085673118994',
                 'jabatan' => 'Kasir'
             ],
             [
                 'nama' => 'Indra Malik Ahmad',
                 'alamat' => 'Surabaya',
-                'jenis_kelamin' => 'Laki Laki',
+                'jenis_kelamin' => 'Laki-Laki',
                 'nomor_telepon' => '081747629773',
                 'jabatan' => 'Karyawan'
             ],
             [
                 'nama' => 'Jonathan Alam',
                 'alamat' => 'Sidoarjo',
-                'jenis_kelamin' => 'Laki Laki',
+                'jenis_kelamin' => 'Laki-Laki',
                 'nomor_telepon' => '085672338140',
                 'jabatan' => 'Karyawan'
             ],
@@ -95,10 +95,10 @@ class PegawaiSeeder extends Seeder
             [
                 'nama' => 'Mukhlis Yandi ',
                 'alamat' => 'Solo',
-                'jenis_kelamin' => 'Laki Laki',
+                'jenis_kelamin' => 'Laki-Laki',
                 'nomor_telepon' => '085778103400',
                 'jabatan' => 'Karyawan'
-            ],
+            ]
         ];
 
             DB::table('pegawais')->insert($data);
