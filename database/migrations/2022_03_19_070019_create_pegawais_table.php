@@ -17,9 +17,9 @@ class CreatePegawaisTable extends Migration
             $table->id();
             $table->string('nama',250);
             $table->string('alamat',50);
-            $table->string('jenis_kelamin',50);
-            $table->string('nomor_telepon',50);
-            $table->string('jabatan',100);
+            $table->string('jenis_kelamin',10);
+            $table->string('nomor_telepon',15);
+            $table->string('jabatan',10);
             $table->timestamps();
         });
     }
